@@ -7,7 +7,7 @@ class Solution {
         int index = -1;
         int sum1 = 0;
         int sum2 = 0;
-        for (int i=0; i < nums.length; i++) {
+        for (int i=0; i < nums.length; i++) { // Creates an array of sum of everything to left and right at each point
             if (i == 0) {
                 leftsum[0] = 0;
                 rightsum[(nums.length - 1)] = 0;
@@ -19,14 +19,14 @@ class Solution {
             }
         
         }
-        for (int j = 0; j < nums.length; j++) {
+        for (int j = 0; j < nums.length; j++) { // Checks if corresponding element in each array are equal
             if (leftsum[j] == rightsum[j]){
                 index = j;
                 exists = true;
                 break;
             }
         }
-        if (exists = false) {
+        if (exists = false) { // If no pivot index, output == -1
             index = -1;
         }
         return index;
