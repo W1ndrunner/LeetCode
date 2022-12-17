@@ -12,7 +12,7 @@ class Solution {
                 leftsum[0] = 0;
                 rightsum[(nums.length - 1)] = 0;
             } else {
-                sum1 += nums[i];
+                sum1 += nums[i-1];
                 leftsum[i] = sum1;
                 sum2 += nums[(nums.length-i)];
                 rightsum[(nums.length - i - 1)] = sum2;
