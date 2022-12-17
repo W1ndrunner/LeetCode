@@ -24,7 +24,7 @@ class solution {
                     if (s.charAt(i) == numerals[j]) {
                         currentvalue = values[j];
                     }
-                    if ((i+1) < s.length()) {
+                    if ((i+1) < s.length()) { 
                         if (s.charAt(i+1) == numerals[j])  {
                         nextvalue = values[j];
                         }
@@ -33,7 +33,7 @@ class solution {
 
                  }
                  
-                 if ( currentvalue < nextvalue) {
+                 if ( currentvalue < nextvalue) { //
                     answer += (nextvalue - currentvalue);
                     anomaly = true;
                  } else{
