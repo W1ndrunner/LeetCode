@@ -8,7 +8,7 @@ class Solution {
         int sum1 = 0;
         int sum2 = 0;
         for (int i=0; i < nums.length; i++) { // Creates an array of sum of everything to left and right at each point
-            if (i == 0) {
+            if (i == 0) { // Makes starting leftsum and last rightsum 0
                 leftsum[0] = 0;
                 rightsum[(nums.length - 1)] = 0;
             } else {
