@@ -1,6 +1,6 @@
 
 class Solution {
-    public int pivotIndex(int[] nums) {
+    public int pivotIndex(int[] nums) { // Inefficient.
         boolean exists = false;
         int[] leftsum = new int[nums.length];
         int[] rightsum = new int[nums.length];
