@@ -2,7 +2,7 @@
 class Solution {
     public int pivotIndex(int[] nums) { // Inefficient.
         boolean exists = false;
-        int[] leftsum = new int[nums.length];
+        int[] leftsum = new int[nums.length]; //Creating arrays.
         int[] rightsum = new int[nums.length];
         int index = -1;
         int sum1 = 0;

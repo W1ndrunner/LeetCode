@@ -12,7 +12,7 @@ class solution {
         char[] numerals = {'I', 'V', 'X', 'L', 'C', 'D', 'M'};
         int[] values = {1, 5, 10, 50, 100, 500, 1000};
         // char[] innumerals = s.toCharArray(); Turns String into an array of chars
-        for (int i=0; i < s.length(); i++) {// Cycles through chars in String
+        for (int i=0; i < s.length(); i++) {// Cycles through chars in String.
             j = 0; 
             if (anomaly == true) {
                 anomaly = false;
