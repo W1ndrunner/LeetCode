@@ -12,7 +12,7 @@ public class SquaresOfSortedArray {
                 result[p] = nums[i] * nums[i];
                 i++;
             } else{
-                result[p] = A[j] * A[j];
+                result[p] = nums[j] * nums[j];
                 j--;
             }
         }
